@@ -19,7 +19,7 @@
             span1.textContent=localStorage.getItem("span1");
         function totalClick(click){
             v1 +=1
-           
+            if (isNaN("span1")) span1 = 0;
             localStorage.setItem("span1", v1);
             document.getElementById("span1").textContent=+v1; 
           
