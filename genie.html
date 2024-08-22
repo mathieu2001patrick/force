@@ -6,41 +6,10 @@
     <title>Demonstration</title>
 </head>
 <body>
-   <!-- source.php -->
- 
-<iframe src="plus.html"></iframe>
- 
-<script>
-    window.addEventListener("load", function () {
-        const iframe = document.querySelector("iframe")
-        const wind = iframe.contentWindow
-         
-        const data = {
-            name: "adnan-tech.com"
-        }
-         
-        wind.postMessage(JSON.stringify(data), "*")
-    })
-</script>
-
-<!-- http://destination-website.com/saveLocalStorage.php -->
- 
-<script>
-    window.addEventListener("message", function (e) {
-        if (e.origin !== "http://source-website.com") {
-            return
-        }
-         
-        const data = JSON.parse(e.data)
-         
-        if (typeof data.name !== "undefined") {
-            localStorage.setItem("name", data.name)
-            console.log("Name is set: " + data.name)
-        }
-    })
-</script>
+   
+<a href="https://mathieu2001patrick.github.io/force/genie.html"
+target="_blank">
+<img src="logo.jpg" width="40px"></a>
     <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/at6dUEUb2AM?si=eLtdwmSDL5brz71Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 </body>
 </html>
